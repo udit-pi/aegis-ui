@@ -1,0 +1,44 @@
+//Sidebar
+$sidebar-border-right: transparent;
+$sidebar-background-color: $gray-100;
+$sidebar-shadow: 2px 0 4px rgba(0, 0, 0, 0.03);
+
+$sidebar-menutoggle-icon-color:$gray-600;
+
+$sidebar-link-background-color: transparent;
+$sidebar-link-border-color: transparent; 
+$sidebar-link-color: $black;
+
+$sidebar-link-background-color-hover: $primary-10;
+$sidebar-link-border-color-hover: $primary;
+$sidebar-link-color-hover: $black;
+
+$sidebar-link-background-color-active: $primary-10;
+$sidebar-link-border-color-active: $primary;
+$sidebar-link-color-active: $black;
+
+// Header
+$header-background: $gray-900;
+$header-link-color: $gray-400;
+$header-link-color-active: $white; 
+$header-link-color-active-mobile: $primary; 
+$header-link-border-color-active: $primary;
+$header-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+$header-name-initials-background: $primary;
+$header-name-initials-color: $white;
+
+//Notifications
+$notifications-unread-icon-color: $primary;
+$notifications-item-color: $black;
+$notifications-item-unread-color: $black;
+$notifications-item-icon-color: $black;
+$notifications-item-unread-icon-color: $primary;
+
+//Page title
+$page-header-title-color: $text;
+$page-header-breadcrumbs-color: $gray-700;
+$page-header-toolbar-link: $gray-800;
+
+//Auth

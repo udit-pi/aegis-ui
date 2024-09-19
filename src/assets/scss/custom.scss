@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+$font-family-base: "DM Sans", sans-serif;
+$primary: #FF6C01; // Your custom primary color
+$primary-10: mix(white, $primary, 90%);
+$primary-20: mix(white, $primary, 80%);
+$secondary: #6c757d; // Custom secondary color
+$body-bg-color: #fff; 
+
+
+$text: #262a2e; 
+ 
+$line-grey: rgba(0, 0, 0, 0.1);
+$color-white: white;
+$color-black: #262a2e;
+$gray-900: #262a2e;
+
+//Tables
+$table-th-font-weight:500;
+$table-font-size: 0.9rem;
+$table-cell-padding-y-sm:     .375rem;
+
+  
+$card-bg: #fff;
+$card-cap-bg: #fff; 
+$card-border-radius: 1rem;
+$card-box-shadow: 0 0 10px rgba(0,0,0,0.06);
+$card-border-width: 0;
+$card-cap-padding-y:1rem;
+$card-cap-padding-x:1rem;
+
+$form-label-color: rgba(0, 0, 0, 0.5);
+$input-border-color:rgba(0, 0, 0, 0.25);
+$form-check-label-color:$form-label-color;
+$unread-color: #0E5FF5;
+$activechat-color:mix(white, $unread-color, 92%);
+$form-check-label-font-size: 0.85rem;
+
+$box-border-radius: 4px;
+
+
+$form-label-font-size: 0.9rem;
+$form-label-font-weight: 500;
+
+$input-border-radius: 0.35rem;
+$input-border-radius-sm: 0.35rem;               
+$btn-border-radius: 0.35rem;
+$btn-border-radius-sm: 0.35rem;
+
+
+$pagination-active-color:rgba(0,0,0,0.5);
+$pagination-active-bg:transparent;
+
+$header-height: 60px;
+$subheader-height: 70px;
+$footer-height: 60px;
+
+$sidebar-width: 230px;
+$sidebar-width-collapsed: 70px;
+  
+
+
+.form-check-label { 
+  font-size: $form-check-label-font-size;
+}
+ 
+// Import Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+$color-mode-type: data;
+
+body { font-optical-sizing: auto; color: $color-black; font-size:18px; font-weight: 300; background-color: $body-bg-color; }
+h1, .h1 { margin: 0}
+
+
+@import "./themes.scss";
+@import "./sidebar.scss";
+@import "./layout.scss";
+@import "./auth.scss";
+// @import "./dashboard.scss";
+// @import "./chats.scss";
+// @import "./companydata.scss";
+
+

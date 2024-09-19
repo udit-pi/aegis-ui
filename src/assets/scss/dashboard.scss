@@ -1,0 +1,131 @@
+.dashboard {
+  &__toolbar {
+    padding-bottom:1rem;
+    display: flex; justify-content: space-between;
+    .btn { background-color: white;}
+    .toolbar_left { display: flex; gap:0.75rem;}
+  }
+  .scorecards_container { display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 1rem}
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 1.75rem;
+    min-width: 220px;
+    background-color: $white;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+    
+
+    &__title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+      text-align: left;
+      padding-bottom: 0.75rem;
+    }
+
+    &__subtitle {
+      font-size: 0.85rem;
+      font-weight: 400;
+      margin: 0;
+      text-align: left;
+    }
+  }
+  
+  .score-card {
+    min-height: 130px;
+
+    &__values {
+      flex-grow: 1;
+      justify-self: flex-end;
+    }
+
+    &__value {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: left;
+      color: #000;
+    }
+
+    &__value_compare {
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: left;
+      color: #000;
+      margin-left: 0.25rem;
+    }
+  }
+
+  .chart-card {
+    min-height: 280px;
+
+    &__body {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .chart-container {
+      position: relative;
+      display: flex; justify-content: flex-start;
+      height: 100%; // Adjust this value as needed
+      width: 100%;
+    }
+  }
+
+  .list-card {
+    &__title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    &__list {
+      list-style-type: none;
+      padding: 0;
+      margin-left:-1.75rem;
+      margin-right:-1.75rem;
+    }
+
+    &__item {
+      padding-top:0.75rem;
+      padding-bottom:0.75rem;
+      padding-left:1.75rem;
+      padding-right:1.75rem;
+      border-bottom:1px solid $gray-200;
+      &:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+      &.has-icon { display: flex; justify-content: flex-start; gap:0.5rem;}
+      .icon { width: 18px !important; height: auto; }
+    }
+
+    &__description {
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0;
+
+      
+    }
+
+    &__timestamp {
+      font-size: 0.875rem;
+      font-weight: 300;
+      color: gray;
+    }
+  }
+
+  .bar-chart-card {
+    min-height: 400px;
+
+    &__body {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

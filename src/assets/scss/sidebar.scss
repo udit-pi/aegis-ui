@@ -1,0 +1,115 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: $header-height;
+  bottom: 0;
+  width: $sidebar-width; // Full width of the expanded sidebar
+  z-index: 105;
+  border-right: 1px solid $sidebar-border-right;
+  transition: all 0.3s ease;
+  background-color: $sidebar-background-color;
+  box-shadow: $sidebar-shadow;
+  
+  
+  // Collapsed state
+  &.is-collapsed {
+    width: $sidebar-width-collapsed; // Width of the collapsed sidebar
+
+  
+
+    .link-list {
+      justify-content: center;
+      padding: 0.5rem;
+      
+      .nav-link {
+        display: none; // Hide the text of the links
+      }
+
+      .arrow {
+        display: none; // Optionally hide the arrow
+      }
+
+      .link-title { display: none;}
+    }
+
+    .toggle-icon {
+      justify-content: center;
+      transform: scaleX(-1);
+    }
+
+    
+  }
+
+  // Toggle button for expanding/collapsing
+  .toggle-icon {
+    cursor: pointer;
+    width: 100%;
+    color: $sidebar-menutoggle-icon-color;
+    padding: 1rem;
+    transition: all 0.5s ease;
+    transform-origin: center;
+    display: flex;
+    justify-content: flex-end;
+
+    
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-grow: 1;
+    ul {
+      list-style: none;
+      flex-grow: 1;
+      padding: 2rem 0.75rem 0; // Add padding around the nav list
+
+      li {
+        margin-bottom: 1rem;
+        &.is_last { margin-top: auto; }
+        .link-list {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 0.5rem 1rem;
+          border-radius: $box-border-radius;
+          gap:8px;
+          font-size: 1rem;
+          font-weight: 400;
+          color: $sidebar-link-color;
+          text-decoration: none;
+          border-style: solid;
+          border-width: 1px;
+          border-color: $sidebar-link-border-color;
+          transition: background-color 0.3s, color 0.3s;
+          background: $sidebar-link-background-color;
+          
+          .link-title { transition: all 0.5s;}
+          &:hover {
+            background-color: $sidebar-link-background-color-hover; // Define hover background
+            border-color: $sidebar-link-border-color-hover; // Define hover border
+            color: $sidebar-link-color-hover; // Define hover text color
+
+            
+          }
+
+          
+        }
+
+        &.active .link-list {
+          background-color: $sidebar-link-background-color-active !important; // Active background color
+          border-color: $sidebar-link-border-color-active  !important; // Define hover border
+          color: $sidebar-link-color-active !important; // Active text color
+        }
+
+       
+      }
+    }
+  }
+}
+

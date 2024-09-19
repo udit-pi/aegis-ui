@@ -1,0 +1,93 @@
+
+.auth-container {
+  
+    overflow-x: hidden;
+    position: relative;
+    
+    .alert-box {
+      position: absolute;
+      left: 50%;
+      top: 10vh;
+      transform: translateX(-50%);
+      width: 90%; /* Adjust the width as needed */
+      max-width: 400px; /* Adjust the max-width as needed */
+      z-index: 1;
+  
+      .alert { display: flex; justify-content: center; align-items: center; font-size:1rem; padding: 0.5rem 1rem;}
+    }
+  
+  
+    /* Prevent horizontal scrolling */
+    .auth-bg {
+      background: url("../images/login_bg.png") no-repeat top left;
+      background-size: cover;
+      height: 100vh;
+    }
+  }
+  
+  .auth-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+    
+    
+    input { text-align: center;}
+    .otp-input-container {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+    
+    #otp {
+      letter-spacing: 0.5em;
+      font-size: 1rem;
+      border: none;
+      
+      outline: none;
+      width: 9em;
+      text-align: center;
+    }
+    
+    .countdown-text { text-align: center;}
+    .otp-timer { font-size:0.85rem; margin-top: 0.75rem;;}
+    .otp-resend-link { font-size: 0.85rem; color: $primary; margin-top: 0.75rem; display: block; }
+    .forgot-password-link {
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+  
+    .secondary-cta {
+      font-size: 0.85rem;
+      width: 100%;
+      display: block;
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+  
+    .auth-card {
+      padding: 0 1.5rem;
+      min-width: 300px;
+      width: 100%;
+      max-width: 450px;
+      box-sizing: border-box;
+    }
+  }
+  
+  .auth-header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .password-toggle-icon {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    position: absolute;
+  }
