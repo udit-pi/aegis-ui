@@ -1,3 +1,14 @@
+//form
+// Color variables to be defined in the theme file
+$label-color: var(--label-color);
+$input-border-color: var(--input-border-color);
+$drag-drop-border-color: var(--drag-drop-border-color);
+$thumbnail-border-color: var(--thumbnail-border-color);
+$focus-box-shadow-color: var(--focus-box-shadow-color);
+$hover-border-color: var(--hover-border-color);
+
+// Form Section Header
+
 //Sidebar
 $sidebar-border-right: transparent;
 $sidebar-background-color: $gray-100;

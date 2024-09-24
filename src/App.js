@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Import pages/components
 import Incidents from './pages/Incidents/Incidents';
+import NewIncidentForm from './pages/Incidents/NewIncidentForm';
 // Uncomment and import other components as needed
 // import SignIn from './pages/Auth/sign-in';
 // import ForgotPassword from './pages/Auth/forgot-password';
@@ -16,6 +17,7 @@ const App = () => {
       <Routes>
         {/* Define routes here */}
         <Route path="/hse/incidents" element={<Incidents />} />
+        <Route path="/hse/incident/add" element={<NewIncidentForm />} />
 
         {/* Uncomment and use other routes when ready */}
         {/* <Route path="/login" element={<SignIn />} /> */}

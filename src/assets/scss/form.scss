@@ -1,0 +1,131 @@
+// General form layout and spacing
+$form-padding: 1.5rem;
+$input-border-radius: 0.25rem;
+
+
+// Form container
+.form-container {
+  padding: $form-padding;
+  
+  // Section Header
+  .form-section-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $label-color;
+    margin-bottom: 1rem;
+  }
+
+  // Form fields wrapper
+  .form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+      display: block;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $label-color;
+      margin-bottom: 0.5rem;
+    }
+
+    input, select, textarea {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      color: var(--input-text-color); // Defined in the theme
+      background-color: var(--input-bg-color); // Defined in the theme
+      background-clip: padding-box;
+      border: 1px solid $input-border-color;
+      border-radius: $input-border-radius;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+      &:focus {
+        border-color: $hover-border-color;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem $focus-box-shadow-color;
+      }
+    }
+  }
+
+  // Drag and Drop Zone
+  .drag-drop-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 2px dashed $drag-drop-border-color;
+    border-radius: $input-border-radius;
+    margin-bottom: 1.5rem;
+    background-color: var(--drag-drop-bg-color); // Defined in the theme
+    cursor: pointer;
+
+    .drag-drop-text {
+      font-size: 1rem;
+      color: $label-color;
+    }
+
+    .icon-upload {
+      margin-right: 0.5rem;
+      font-size: 1.25rem;
+      color: $label-color;
+    }
+  }
+
+  // Thumbnail Preview Section
+  .thumbnail-preview {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    .thumbnail {
+      width: 100px;
+      height: 100px;
+      border: 1px solid $thumbnail-border-color;
+      border-radius: $input-border-radius;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .remove-thumbnail {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 0.75rem;
+        color: var(--remove-thumbnail-color); // Defined in the theme
+        cursor: pointer;
+        text-align: center;
+      }
+    }
+  }
+
+  // Fixed Footer
+  .form-footer {
+    position: sticky;
+    bottom: 0;
+    background-color: var(--footer-bg-color); // Defined in the theme
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: $input-border-radius;
+      cursor: pointer;
+
+      &.btn-save {
+        background-color: var(--btn-save-bg-color); // Defined in the theme
+        color: var(--btn-save-text-color); // Defined in the theme
+      }
+
+      &.btn-cancel {
+        background-color: var(--btn-cancel-bg-color); // Defined in the theme
+        color: var(--btn-cancel-text-color); // Defined in the theme
+      }
+    }
+  }
+}
